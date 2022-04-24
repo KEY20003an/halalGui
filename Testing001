@@ -87,4 +87,8 @@ window3:Button("SaZaHub", function()
    loadstring(game:HttpGet"https://rawscripts.net/raw/SAZA-HUB_496")()
 end)
 
+window:Button("Blacktrap", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/BdvUGb2q
+end)
+
 library:Keybind("P")
