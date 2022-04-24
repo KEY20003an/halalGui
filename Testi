@@ -102,6 +102,12 @@ b:Button("G.A.X.P Script",function()
 
 end)
 
+b:Button("KillAll",function()
+
+    loadstring(game:HttpGet("https://pastebin.com/raw/xq7q0XPq"))()
+
+end)
+
 b:DestroyGui()
 
 game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
@@ -112,5 +118,55 @@ game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
 
     TextSize = 18,
 
-}). 
+}).
+
+Local UserInputService = game:GetService("UserInputService") 
+
+Local MainFrame = script.Parent
+
+Local TopBar = MainFrame:WaitForChild("TopBar")
+
+Local Camera = workspace:WaitForChild("Camera")
+
+Local DragMousePosition
+
+Local FramePosition
+
+Local Draggable = False
+
+TopBar.InputBegan:Connect(function(input)
+
+         if input.UserInputType -- Enum.UserInputType.MouseButton1 or input.UserInputType -- Enum.UserInputType.Touch then
+
+             Draggable = true
+
+             DragMousePosition = Vector2.new(input.Position.X,  Input.Position.Y)
+
+              FramePosition = Vector2.new(MainFrame.Position.X.Scale,  MainFrame.Position.Y.Scale)
+
+       end
+
+end)
+
+TopBar.InputEnded:Connect(function(input)
+
+         if input.UserInputType -- Enum.UserInputType.MouseButton1 or input.UserInputType -- Enum.UserInputType.Touch then
+
+             Draggable = false
+
+       end
+
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+
+        if Draggable -- true then 
+
+              Local Newposition = FramePosition  +  ( (Vector2.new(input.Position.X,  Input.Position.Y)  DragMousePosition)  /  Camera.ViewPortSize) 
+
+              MainFrame.Position = Udim2.new(Newposition.X,  0,  Newposition.Y,  0) 
+
+     end
+
+end) 
 
