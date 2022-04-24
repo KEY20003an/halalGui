@@ -98,7 +98,7 @@ end)
 
 b:Button("G.A.X.P Script",function()
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/PremierHub/Data/main/code.lua"))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/NayXivCn"))() 
 
 end)
 
@@ -112,4 +112,5 @@ game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
 
     TextSize = 18,
 
-})
+}). 
+
