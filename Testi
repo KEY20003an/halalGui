@@ -42,7 +42,7 @@ UserInputService.InputChanged:Connect(function(input)
 
               Local Newposition = FramePosition  +  ( (Vector2.new(input.Position.X,  Input.Position.Y)  DragMousePosition)  /  Camera.ViewPortSize) 
 
-              MainFrame.Position = Udim2.new(Newposition.X,  0,  Newposition.Y,  0) 
+              MainFrame.Position = UDim2.new(Newposition.X,  0,  Newposition.Y,  0) 
 
      end
 
