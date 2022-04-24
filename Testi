@@ -1,52 +1,12 @@
-Local UserInputService = game:GetService("UserInputService") 
+main.Name = "main"
 
-Local MainFrame = script.Parent
+main.Position = UDim2.new(0.0203577988, 0, 0.641277611, 0)
 
-Local TopBar = MainFrame:WaitForChild("TopBar")
+main.Visible = false
 
-Local Camera = workspace:WaitForChild("Camera")
+main.Active = true
 
-Local DragMousePosition
-
-Local FramePosition
-
-Local Draggable = False
-
-TopBar.InputBegan:Connect(function(input)
-
-         if input.UserInputType -- Enum.UserInputType.MouseButton1 or input.UserInputType -- Enum.UserInputType.Touch then
-
-             Draggable = true
-
-             DragMousePosition = Vector2.new(input.Position.X,  Input.Position.Y)
-
-              FramePosition = Vector2.new(MainFrame.Position.X.Scale,  MainFrame.Position.Y.Scale)
-
-       end
-
-end)
-
-TopBar.InputEnded:Connect(function(input)
-
-         if input.UserInputType -- Enum.UserInputType.MouseButton1 or input.UserInputType -- Enum.UserInputType.Touch then
-
-             Draggable = false
-
-       end
-
-end)
-
-UserInputService.InputChanged:Connect(function(input)
-
-        if Draggable -- true then 
-
-              Local Newposition = FramePosition  +  ( (Vector2.new(input.Position.X,  Input.Position.Y)  DragMousePosition)  /  Camera.ViewPortSize) 
-
-              MainFrame.Position = UDim2.new(Newposition.X,  0,  Newposition.Y,  0) 
-
-     end
-
-end) 
+main.Draggable = true 
 
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
 
@@ -169,4 +129,5 @@ game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
     TextSize = 18,
 
 }).
+
 
