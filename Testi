@@ -162,18 +162,6 @@ end)
 
 end)
 
-b:Label("Destroy gui",{
-
-    TextSize = 25; -- Self Explaining
-
-    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
-
-    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
-
-    
-
-}) 
-
 b:DestroyGui() 
 
 game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
@@ -186,3 +174,8 @@ game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
 
 }). 
 
+    
+
+
+
+    
