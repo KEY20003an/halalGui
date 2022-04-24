@@ -1,177 +1,90 @@
-local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
+---- Library
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/miroeramaa/TurtleLib/main/TurtleUiLib.lua"))()
 
-local w = library:CreateWindow("HalalHub") -- Creates the window
+---- Windows
+local window = library:Window("Script1")
+local window1 = library:Window("Blox fruit/King Legacy")
+local window2 = library:Window("Arsenal")
+local window3 = library:Window("PetsimX")
 
-local b = w:CreateFolder("Script") -- Creates the folder(U will put here your buttons,etc)
-
-b:Label("Bloxfruit",{
-
-    TextSize = 25; -- Self Explaining
-
-    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
-
-    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
-
-    
-
-}) 
-
-b:Button("RipperHub",function()
-
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/BFMobile.lua'))()
-
+---- Buttons
+window:Button("KeyboardScriptV1", function()
+   loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
 end)
 
-b:Label("Shindo",{
-
-    TextSize = 25; -- Self Explaining
-
-    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
-
-    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
-
-    
-
-}) 
-
-b:Button("PremierHub",function()
-
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/PremierHub/Data/main/code.lua"))()
-
+window:Button("KeyboardScriptV2", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/YQepsr17"))() 
 end)
 
-b:Label("Keyboard Script ",{
-
-    TextSize = 25; -- Self Explaining
-
-    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
-
-    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
-
-    
-
-}) 
-
-b:Button("Keyboard V2",function()
-
-    loadstring(game:HttpGet("https://pastebin.com/raw/YQepsr17"))() 
-
+window:Button("trollguiV2", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/wDh1eTdX"))()
 end)
 
-    
-
- b:Button("Keyboard V1",function()
-
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
-
+window:Button("RemXTroll", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/D4ti9RXm"))() 
 end)
 
-local b = w:CreateFolder("ArsenalOnly") -- Creates the folder(U will put here your buttons,etc)
+window:Button("BrookhavenTroll", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+end)
 
-b:Label("Hax",{
+window:Button("MaxUi", function()
+   loadstring(game:HttpGet"https://pastebin.com/raw/M3mbVxbB")()
+end)
 
-    TextSize = 25; -- Self Explaining
+window:Button("UzuHub", function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/loader_1038"))()
+end)
 
-    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+window1:Button("RipperHub", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/BFMobile.lua'))()
+end)
 
-    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+ window1:Button("LnHub", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/Cve-Hub/LnHub/main/README.md'))()
+end)
 
-    
+window1:Button("RipperHubKingLegz", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/King%20Leagacy"))()
+end)
 
-}) 
+window2:Button("Aimbot", function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/cyYMhaNH'))() 
+end)
 
-b:Button("Kiriot22Esp",function()
+window2:Button("FastFire", function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/tHmv48Ny'))() 
+end)
 
-    local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kiriot22/ESP-Lib/main/ESP.lua"))()
+window2:Button("Invisiblehitbox", function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/dSB9vukR'))() 
+end)
 
+window2:Button("SilentAim", function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/5Snv4AUs'))() 
+end)
+
+window2:Button("Arceus Aimbot", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/1Gp9c57U"))()
+end)
+
+window2:Button("G.A.X.P Script", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/NayXivCn"))() 
+end)
+
+window2:Button("TpKill", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/xq7q0XPq"))()
+end)
+
+window2:Button("Kiriot22 Esp", function()
+   local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kiriot22/ESP-Lib/main/ESP.lua"))()
 ESP:Toggle(true)
-
 ESP.TeamColor = true
-
 ESP.Tracers = true
-
 end)
 
-b:Button("Aimbot",function()
-
-    loadstring(game:HttpGet('https://pastebin.com/raw/cyYMhaNH'))() 
-
+window3:Button("SaZaHub", function()
+   loadstring(game:HttpGet"https://rawscripts.net/raw/SAZA-HUB_496")()
 end)
 
-b:Button("Fast Fire",function()
-
-    loadstring(game:HttpGet('https://pastebin.com/raw/tHmv48Ny'))() 
-
-end)
-
-b:Button("Invisible hitbox",function()
-
-    loadstring(game:HttpGet('https://pastebin.com/raw/dSB9vukR'))() 
-
-end)
-
-b:Button("Silent Aim",function()
-
-    loadstring(game:HttpGet('https://pastebin.com/raw/5Snv4AUs'))() 
-
-end)
-
-b:Button("Aimbot Arceus",function()
-
-    loadstring(game:HttpGet("https://pastebin.com/raw/1Gp9c57U"))()
-
-end)
-
-b:Button("G.A.X.P Script",function()
-
-    loadstring(game:HttpGet("https://pastebin.com/raw/NayXivCn"))() 
-
-end)
-
-b:Button("KillAll",function()
-
-    loadstring(game:HttpGet("https://pastebin.com/raw/xq7q0XPq"))()
-
-end)
-
-local b = w:CreateFolder("Troll Gui") -- Creates the folder(U will put here your buttons,etc)
-
-b:Button("TrollGui V2",function()
-
-    loadstring(game:HttpGet("https://pastebin.com/raw/wDh1eTdX"))()
-
-end)
-
-local b = w:CreateFolder("Pet Simulator") -- Creates the folder(U will put here your buttons,etc)
-
-b:Button("Saza Hub",function()
-
-    _G.Color = Color3.fromRGB(255, 255, 255)
-
-loadstring(game:HttpGet"https://rawscripts.net/raw/SAZA-HUB_496")()
-
-end)
-
- local b = w:CreateFolder("King Legacy") -- Creates the folder(U will put here your buttons,etc)
-
- 
-
- b:Button("RipperHub(KL)",function()
-
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/King%20Leagacy"))()
-
-end)
-
-b:DestroyGui() 
-
-game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
-
-    Text = "[HalalChad]: Script Activated.",
-
-    Color = Color3.new(0, 191, 255),
-
-    TextSize = 18,
-
-})
-
-    
+library:Keybind("P")
